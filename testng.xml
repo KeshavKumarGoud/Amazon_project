@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Amz_Suite">
+  <test thread-count="5" name="Amz_Test">
+    <classes>
+      <class name="amz_testcases.Login_using_correct_cred"/>
+      <class name="amz_testcases.Check_product_details_present"/>
+      <class name="amz_testcases.search_product"/>
+      <class name="amz_testcases.Products_sort_price"/>
+      <class name="amz_testcases.Login_using_incorrect_cred"/>
+      <class name="amz_testcases.Search_apply_filter_category"/>
+      <class name="amz_testcases.New_user_registration"/>
+      <class name="amz_testcases.Profile_edit_name"/>
+    </classes>
+  </test> <!-- Amz_Test -->
+</suite> <!-- Amz_Suite -->
