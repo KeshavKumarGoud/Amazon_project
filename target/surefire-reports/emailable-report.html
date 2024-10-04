@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Amz_Suite1</th></tr>
+<tr><td><a href="#t0">Amz_Test1</a></td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num attn">6</td><td class="num">38,870</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Amz_Suite1</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Amz_Test1 &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">Pkg_maven.Amz_project.Profile_edit_name</td><td><a href="#m0">Amz_logout</a></td><td rowspan="1">1728055862036</td><td rowspan="1">10261</td></tr><tr><th colspan="4">Amz_Test1 &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">Pkg_maven.Amz_project.Check_product_details_present</td><td><a href="#m1">verify_product_details</a></td><td rowspan="1">1728055844481</td><td rowspan="1">1</td></tr><tr class="failedodd"><td rowspan="3">Pkg_maven.Amz_project.Products_sort_price</td><td><a href="#m2">price_hightolow</a></td><td rowspan="1">1728055862031</td><td rowspan="1">1</td></tr><tr class="failedodd"><td><a href="#m3">price_lowtohigh</a></td><td rowspan="1">1728055862034</td><td rowspan="1">1</td></tr><tr class="failedodd"><td><a href="#m4">sort_reviews</a></td><td rowspan="1">1728055862035</td><td rowspan="1">1</td></tr><tr class="failedeven"><td rowspan="1">Pkg_maven.Amz_project.Search_apply_filter_category</td><td><a href="#m5">apply_filter</a></td><td rowspan="1">1728055844476</td><td rowspan="1">1</td></tr><tr class="failedodd"><td rowspan="1">Pkg_maven.Amz_project.search_product</td><td><a href="#m6">Amz_search_product</a></td><td rowspan="1">1728055862020</td><td rowspan="1">10</td></tr><tr><th colspan="4">Amz_Test1 &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">Pkg_maven.Amz_project.Login_using_correct_cred</td><td><a href="#m7">login_method</a></td><td rowspan="1">1728055847599</td><td rowspan="1">5143</td></tr><tr class="passedodd"><td rowspan="1">Pkg_maven.Amz_project.Login_using_incorrect_cred</td><td><a href="#m8">login_incorrect_cred</a></td><td rowspan="1">1728055852742</td><td rowspan="1">9278</td></tr><tr class="passedeven"><td rowspan="1">Pkg_maven.Amz_project.New_user_registration</td><td><a href="#m9">register</a></td><td rowspan="1">1728055844484</td><td rowspan="1">3113</td></tr><tr class="passedodd"><td rowspan="1">Pkg_maven.Amz_project.Profile_edit_name</td><td><a href="#m10">edit_profile_username</a></td><td rowspan="1">1728055838024</td><td rowspan="1">6449</td></tr></tbody>
+</table>
+<h2>Amz_Test1</h2><h3 id="m0">Pkg_maven.Amz_project.Profile_edit_name#Amz_logout</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=129.0.6668.71)
+Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [465d8d8d061555042745e57c25343de7, clickElement {id=f.F2B55BD975C3FF25F289021BB94D920F.d.340857B43B46C58F9455C0DC29CBA495.e.283}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.71, chrome: {chromedriverVersion: 129.0.6668.89 (951c0b97221f..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65185}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65185/devtoo..., se:cdpVersion: 129.0.6668.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (465d8d8d061555042745e57c25343de7)] -&gt; id: nav-item-signout]
+Session ID: 465d8d8d061555042745e57c25343de7
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at Pkg_maven.Amz_project.login_logout.Amz_logout(login_logout.java:38)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">Pkg_maven.Amz_project.Check_product_details_present#verify_product_details</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">test case has been failed</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)&quot; because &quot;this.searchContext&quot; is null
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy11.clear(Unknown Source)
+	at Pkg_maven.Amz_project.Amz_home_page.search_products(Amz_home_page.java:47)
+	at Pkg_maven.Amz_project.Check_product_details_present.verify_product_details(Check_product_details_present.java:14)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">Pkg_maven.Amz_project.Products_sort_price#price_hightolow</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">test case has been failed</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)&quot; because &quot;this.searchContext&quot; is null
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy11.clear(Unknown Source)
+	at Pkg_maven.Amz_project.Amz_home_page.search_products(Amz_home_page.java:47)
+	at Pkg_maven.Amz_project.Products_sort_price.price_hightolow(Products_sort_price.java:25)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">Pkg_maven.Amz_project.Products_sort_price#price_lowtohigh</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">test case has been failed</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)&quot; because &quot;this.searchContext&quot; is null
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy11.clear(Unknown Source)
+	at Pkg_maven.Amz_project.Amz_home_page.search_products(Amz_home_page.java:47)
+	at Pkg_maven.Amz_project.Products_sort_price.price_lowtohigh(Products_sort_price.java:15)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">Pkg_maven.Amz_project.Products_sort_price#sort_reviews</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">test case has been failed</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)&quot; because &quot;this.searchContext&quot; is null
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy11.clear(Unknown Source)
+	at Pkg_maven.Amz_project.Amz_home_page.search_products(Amz_home_page.java:47)
+	at Pkg_maven.Amz_project.Products_sort_price.sort_reviews(Products_sort_price.java:35)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">Pkg_maven.Amz_project.Search_apply_filter_category#apply_filter</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">test case has been failed</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)&quot; because &quot;this.searchContext&quot; is null
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy11.clear(Unknown Source)
+	at Pkg_maven.Amz_project.Amz_home_page.search_products(Amz_home_page.java:47)
+	at Pkg_maven.Amz_project.Search_apply_filter_category.apply_filter(Search_apply_filter_category.java:19)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">Pkg_maven.Amz_project.search_product#Amz_search_product</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">test case has been failed</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)&quot; because &quot;this.searchContext&quot; is null
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy11.clear(Unknown Source)
+	at Pkg_maven.Amz_project.Amz_home_page.search_products(Amz_home_page.java:47)
+	at Pkg_maven.Amz_project.search_product.Amz_search_product(search_product.java:15)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">Pkg_maven.Amz_project.Login_using_correct_cred#login_method</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">test case has been passed</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">Pkg_maven.Amz_project.Login_using_incorrect_cred#login_incorrect_cred</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">test case has been passed</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">Pkg_maven.Amz_project.New_user_registration#register</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">test case has been passed</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">Pkg_maven.Amz_project.Profile_edit_name#edit_profile_username</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">test case has been passed</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

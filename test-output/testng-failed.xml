@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Amz_Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Amz_Test(failed)">
+    <classes>
+      <class name="amz_testcases.Login_using_correct_cred">
+        <methods>
+          <include name="login_method"/>
+        </methods>
+      </class> <!-- amz_testcases.Login_using_correct_cred -->
+      <class name="amz_testcases.Profile_edit_name">
+        <methods>
+          <include name="Amz_logout"/>
+          <include name="edit_profile_username"/>
+          <include name="Amz_login"/>
+        </methods>
+      </class> <!-- amz_testcases.Profile_edit_name -->
+      <class name="amz_testcases.search_product">
+        <methods>
+          <include name="Amz_logout"/>
+          <include name="Amz_search_product"/>
+          <include name="Amz_login"/>
+        </methods>
+      </class> <!-- amz_testcases.search_product -->
+      <class name="amz_testcases.Search_apply_filter_category">
+        <methods>
+          <include name="apply_filter"/>
+          <include name="Amz_logout"/>
+          <include name="Amz_login"/>
+        </methods>
+      </class> <!-- amz_testcases.Search_apply_filter_category -->
+      <class name="amz_testcases.Products_sort_price">
+        <methods>
+          <include name="sort_reviews"/>
+          <include name="Amz_logout"/>
+          <include name="price_hightolow"/>
+          <include name="Amz_login"/>
+          <include name="price_lowtohigh"/>
+        </methods>
+      </class> <!-- amz_testcases.Products_sort_price -->
+      <class name="amz_testcases.Check_product_details_present">
+        <methods>
+          <include name="Amz_logout"/>
+          <include name="verify_product_details"/>
+          <include name="Amz_login"/>
+        </methods>
+      </class> <!-- amz_testcases.Check_product_details_present -->
+    </classes>
+  </test> <!-- Amz_Test(failed) -->
+</suite> <!-- Failed suite [Amz_Suite] -->
