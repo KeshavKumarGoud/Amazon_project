@@ -19,6 +19,9 @@ public class Amz_search_page {
 	@FindBy(xpath="(//div[@id='brandsRefinements']//li[@aria-label='Nike']//div)")
 	WebElement Nike_brand;
 	
+	@FindBy(xpath="//div[@id='brandsRefinements']//div[@class='a-row a-expander-container a-expander-extend-container']/a")
+	WebElement see_more;
+	
 	@FindBy(xpath="(//div[contains(@class,'SEARCH_RESULTS')]//h2/span)[1]")
 	WebElement search_results_brand;
 	
@@ -37,7 +40,8 @@ public class Amz_search_page {
 	@FindBy(xpath="//div[@data-component-type='s-search-result']//span[contains(@aria-label,'stars')]")
 	List<WebElement> ratings_list; 
 	
-	@FindBy(xpath="(//div[@data-component-type='s-search-result'])[1]")
+	//@FindBy(xpath="(//div[@data-component-type='s-search-result'])[1]")
+	@FindBy(xpath="(//div[@data-component-type='s-search-result'])[1]//div[contains(@class,'product-image')][1]")
 	WebElement product_1st;
 	
 	List<Double> searchlist=new ArrayList<Double>();
@@ -46,6 +50,9 @@ public class Amz_search_page {
 	public void select_brand(WebDriver driver)
 	{
 		WebDriverWait e_wait=new WebDriverWait(driver,Duration.ofSeconds(10));
+		e_wait.until(ExpectedConditions.elementToBeClickable(see_more));
+		see_more.click();
+		
 		e_wait.until(ExpectedConditions.elementToBeClickable(Nike_brand));
 		Nike_brand.click();
 	}
@@ -109,9 +116,14 @@ public class Amz_search_page {
 		Assert.assertTrue(searchlist.equals(sort_searchlist), "the products in search page are not shown in ascending order of average customer reviews");
 	}
 	
-	public void select_1st_product()
+	public void select_1st_product() 
 	{
+		
+		WebDriverWait ewait=new WebDriverWait(driver,Duration.ofSeconds(10));
+		ewait.until(ExpectedConditions.elementToBeClickable(product_1st));
+		
 		product_1st.click();
+		
 		
 	}
 	

@@ -31,6 +31,7 @@ public class Products_sort_price extends login_logout{
 	@Test
 	public void sort_reviews()
 	{
+		driver.navigate().refresh();
 		Amz_home_page homepage=new Amz_home_page(driver);
 		homepage.search_products("shoes");
 		Amz_search_page search_page=new Amz_search_page(driver);

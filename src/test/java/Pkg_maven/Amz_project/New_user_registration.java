@@ -40,6 +40,7 @@ public class New_user_registration {
 	reg_page.enter_mobilr_num();
 	reg_page.enter_password();
 	//reg_page.create_accnt_btn();
+	driver.quit();
 	
 	}
 }

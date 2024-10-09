@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="amz_testcases.Products_sort_price">
+      <class name="Pkg_maven.Amz_project.validate_checkout_process">
         <methods>
-          <include name="sort_reviews"/>
-          <include name="Amz_logout"/>
+          <include name="checkout_process"/>
           <include name="Amz_login"/>
+          <include name="Amz_logout"/>
         </methods>
-      </class> <!-- amz_testcases.Products_sort_price -->
+      </class> <!-- Pkg_maven.Amz_project.validate_checkout_process -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

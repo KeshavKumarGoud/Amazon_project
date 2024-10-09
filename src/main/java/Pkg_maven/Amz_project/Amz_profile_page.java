@@ -19,7 +19,7 @@ public class Amz_profile_page {
 	@FindBy(id="editProfileNameInputId")
 	WebElement username_field;
 
-	@FindBy(id="editProfileContinueButton")
+	@FindBy(xpath="//span[@id='editProfileContinueButton']//input")
 	WebElement continue_btn;
 	
 	@FindBy(xpath="//div[@class='profile-name desktop']")
@@ -28,13 +28,14 @@ public class Amz_profile_page {
 	String update_name="keshav kumar";
 	
 	
-	public void edit_name()
+	public void edit_name() throws InterruptedException
 	{
 		edit_user.click();
 		username_field.clear();
 		username_field.sendKeys(update_name);
 		WebDriverWait e_wait=new WebDriverWait(driver,Duration.ofSeconds(10));
 		e_wait.until(ExpectedConditions.elementToBeClickable(continue_btn));
+		Thread.sleep(1000);
 		continue_btn.click();
 		Assert.assertTrue(update_name.equals(profile_name.getText()), "profile name not matching");
 		//profile_name.getText()
