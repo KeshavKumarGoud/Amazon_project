@@ -35,7 +35,7 @@ public class validate_checkout_process extends login_logout{
 		checkout_page.nextAction_button();
 		checkout_page.select_cashOnDelivery(driver);
 		checkout_page.nextAction_button();
-		//Thread.sleep(3000);
+		Thread.sleep(3000);
 		WebElement review_items_delivery=driver.findElement(By.xpath("//div[@aria-label='Review items and delivery']"));
 		WebDriverWait ewait=new WebDriverWait(driver,Duration.ofSeconds(20));
 		ewait.until(ExpectedConditions.elementToBeClickable(review_items_delivery));

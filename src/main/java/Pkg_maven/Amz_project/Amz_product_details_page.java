@@ -42,6 +42,8 @@ public class Amz_product_details_page {
 	
 	public void check_description_displayed()
 	{
+		WebDriverWait e_wait=new WebDriverWait(driver,Duration.ofSeconds(10));
+		e_wait.until(ExpectedConditions.visibilityOf(selected_product_derscription));
 		Assert.assertTrue(selected_product_derscription.isDisplayed(), "reviews of the product is not displayed");
 	}
 	
