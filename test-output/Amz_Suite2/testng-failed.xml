@@ -3,13 +3,6 @@
 <suite name="Failed suite [Amz_Suite2]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Amz_Test2(failed)">
     <classes>
-      <class name="Pkg_maven.Amz_project.Validate_payment_options">
-        <methods>
-          <include name="Amz_login"/>
-          <include name="Amz_logout"/>
-          <include name="check_payment_method_selection"/>
-        </methods>
-      </class> <!-- Pkg_maven.Amz_project.Validate_payment_options -->
       <class name="Pkg_maven.Amz_project.validate_checkout_process">
         <methods>
           <include name="checkout_process"/>
@@ -17,13 +10,15 @@
           <include name="Amz_logout"/>
         </methods>
       </class> <!-- Pkg_maven.Amz_project.validate_checkout_process -->
-      <class name="Pkg_maven.Amz_project.Cart_operation">
+      <class name="Pkg_maven.Amz_project.Products_sort_price">
         <methods>
           <include name="Amz_login"/>
-          <include name="delete_product_cart"/>
+          <include name="price_lowtohigh"/>
+          <include name="sort_reviews"/>
+          <include name="price_hightolow"/>
           <include name="Amz_logout"/>
         </methods>
-      </class> <!-- Pkg_maven.Amz_project.Cart_operation -->
+      </class> <!-- Pkg_maven.Amz_project.Products_sort_price -->
     </classes>
   </test> <!-- Amz_Test2(failed) -->
 </suite> <!-- Failed suite [Amz_Suite2] -->

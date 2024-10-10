@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/3/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>1/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Oct 10 09:07:31 IST 2024</td>
+<td>Started on:</td><td>Thu Oct 10 22:42:46 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>73 seconds (73836 ms)</td>
+<tr><td>Total time:</td><td>30 seconds (30285 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,88 +75,11 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='Pkg_maven.Amz_project.Products_sort_price.price_lowtohigh()'><b>price_lowtohigh</b><br>Test class: Pkg_maven.Amz_project.Products_sort_price<br/>
-<a href="#Output-375951774" onClick='toggleBox("Output-375951774", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-375951774" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-375951774">
-test case has been failed<br/>
-</div>
-</td>
-<td><div><pre>java.lang.AssertionError: the products in search page are not shown in ascending order of price expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:99)
-	at org.testng.Assert.failNotEquals(Assert.java:1037)
-	at org.testng.Assert.assertTrue(Assert.java:45)
-	at Pkg_maven.Amz_project.Amz_search_page.verify_searchresult_lowtohigh(Amz_search_page.java:90)
-	at Pkg_maven.Amz_project.Products_sort_price.price_lowtohigh(Products_sort_price.java:18)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div><a href='#' onClick='toggleBox("stack-trace375951774", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace375951774'><pre>java.lang.AssertionError: the products in search page are not shown in ascending order of price expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:99)
-	at org.testng.Assert.failNotEquals(Assert.java:1037)
-	at org.testng.Assert.assertTrue(Assert.java:45)
-	at Pkg_maven.Amz_project.Amz_search_page.verify_searchresult_lowtohigh(Amz_search_page.java:90)
-	at Pkg_maven.Amz_project.Products_sort_price.price_lowtohigh(Products_sort_price.java:18)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>10</td>
-<td>Pkg_maven.Amz_project.Products_sort_price@2a265ea9</td></tr>
-<tr>
 <td title='Pkg_maven.Amz_project.Products_sort_price.sort_reviews()'><b>sort_reviews</b><br>Test class: Pkg_maven.Amz_project.Products_sort_price<br/>
-<a href="#Output-1094167216" onClick='toggleBox("Output-1094167216", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1860118977" onClick='toggleBox("Output-1860118977", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1094167216" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1094167216">
+<a href="#Output-1860118977" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1860118977">
 test case has been failed<br/>
 </div>
 </td>
@@ -192,8 +115,8 @@ test case has been failed<br/>
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1094167216", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1094167216'><pre>java.lang.AssertionError: the products in search page are not shown in ascending order of average customer reviews expected [true] but found [false]
+</pre></div><a href='#' onClick='toggleBox("stack-trace1860118977", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1860118977'><pre>java.lang.AssertionError: the products in search page are not shown in ascending order of average customer reviews expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:99)
 	at org.testng.Assert.failNotEquals(Assert.java:1037)
 	at org.testng.Assert.assertTrue(Assert.java:45)
@@ -226,14 +149,14 @@ test case has been failed<br/>
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
-<td>10</td>
+<td>5</td>
 <td>Pkg_maven.Amz_project.Products_sort_price@2a265ea9</td></tr>
 <tr>
 <td title='Pkg_maven.Amz_project.Products_sort_price.price_hightolow()'><b>price_hightolow</b><br>Test class: Pkg_maven.Amz_project.Products_sort_price<br/>
-<a href="#Output-351216770" onClick='toggleBox("Output-351216770", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-60181881" onClick='toggleBox("Output-60181881", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-351216770" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-351216770">
+<a href="#Output-60181881" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-60181881">
 test case has been failed<br/>
 </div>
 </td>
@@ -269,8 +192,8 @@ test case has been failed<br/>
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div><a href='#' onClick='toggleBox("stack-trace351216770", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace351216770'><pre>java.lang.AssertionError: the products in search page are not shown in descending order of price expected [true] but found [false]
+</pre></div><a href='#' onClick='toggleBox("stack-trace60181881", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace60181881'><pre>java.lang.AssertionError: the products in search page are not shown in descending order of price expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:99)
 	at org.testng.Assert.failNotEquals(Assert.java:1037)
 	at org.testng.Assert.assertTrue(Assert.java:45)
@@ -303,7 +226,27 @@ test case has been failed<br/>
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
-<td>16</td>
+<td>5</td>
+<td>Pkg_maven.Amz_project.Products_sort_price@2a265ea9</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Pkg_maven.Amz_project.Products_sort_price.price_lowtohigh()'><b>price_lowtohigh</b><br>Test class: Pkg_maven.Amz_project.Products_sort_price<br/>
+<a href="#Output-351965871" onClick='toggleBox("Output-351965871", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-351965871" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-351965871">
+test case has been passed<br/>
+</div>
+</td>
+<td></td>
+<td>7</td>
 <td>Pkg_maven.Amz_project.Products_sort_price@2a265ea9</td></tr>
 </table><p>
 </body>

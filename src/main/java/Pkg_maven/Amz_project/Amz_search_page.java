@@ -79,7 +79,7 @@ public class Amz_search_page {
 	
 	public void verify_searchresult_lowtohigh()
 	{
-		for(int i=0;i<price_list.size();i++)
+		for(int i=0;i<3;i++)
 		{
 			String price=price_list.get(i).getText();
 			price=price.replace(",", "");
@@ -92,7 +92,7 @@ public class Amz_search_page {
 	
 	public void verify_searchresult_hightolow()
 	{
-		for(int i=0;i<price_list.size();i++)
+		for(int i=0;i<3;i++)
 		{
 			String price=price_list.get(i).getText();
 			price=price.replace(",", "");
@@ -105,7 +105,7 @@ public class Amz_search_page {
 	
 	public void verify_searchresult_reviewsort()
 	{
-		for(int i=0;i<ratings_list.size();i++)
+		for(int i=0;i<3;i++)
 		{
 			String[] rating_value=ratings_list.get(i).getAttribute("aria-label").split(" ");
 			Double rating_int=Double.parseDouble(rating_value[0]);

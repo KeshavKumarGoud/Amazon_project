@@ -6,7 +6,6 @@
       <class name="Pkg_maven.Amz_project.Products_sort_price">
         <methods>
           <include name="Amz_login"/>
-          <include name="price_lowtohigh"/>
           <include name="sort_reviews"/>
           <include name="price_hightolow"/>
           <include name="Amz_logout"/>

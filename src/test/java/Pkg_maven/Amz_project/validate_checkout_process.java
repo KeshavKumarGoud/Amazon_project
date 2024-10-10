@@ -35,14 +35,16 @@ public class validate_checkout_process extends login_logout{
 		checkout_page.nextAction_button();
 		checkout_page.select_cashOnDelivery(driver);
 		checkout_page.nextAction_button();
-		Thread.sleep(3000);
-		WebElement review_items_delivery=driver.findElement(By.xpath("//div[@aria-label='Review items and delivery']"));
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+		WebElement review_items_delivery = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@aria-label='Review items and delivery']")));
+        
+		//WebElement review_items_delivery=driver.findElement(By.xpath("//div[@aria-label='Review items and delivery']"));
 		WebDriverWait ewait=new WebDriverWait(driver,Duration.ofSeconds(20));
 		ewait.until(ExpectedConditions.elementToBeClickable(review_items_delivery));
 		Assert.assertTrue(review_items_delivery.isDisplayed(), "payment method not selected successfully ");
-		WebElement goto_home_page=driver.findElement(By.xpath("//div[@id='banner-image']/span"));
-		goto_home_page.click();
-		WebElement ReturnToCart=driver.findElement(By.partialLinkText("Return to Cart"));
-		ReturnToCart.click();
+		//WebElement goto_home_page=driver.findElement(By.xpath("//div[@id='banner-image']/span"));
+		//goto_home_page.click();
+		//WebElement ReturnToCart=driver.findElement(By.partialLinkText("Return to Cart"));
+		//ReturnToCart.click();
 	}
 }

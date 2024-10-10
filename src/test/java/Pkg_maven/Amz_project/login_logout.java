@@ -38,12 +38,12 @@ public class login_logout extends Listener{
 	@AfterMethod
 	public void Amz_logout() throws InterruptedException
 	{
-		WebElement Accnt_options=driver.findElement(By.id("nav-link-accountList"));
+		/*WebElement Accnt_options=driver.findElement(By.id("nav-link-accountList"));
 		Actions A1=new Actions(driver);
 		A1.moveToElement(Accnt_options).perform();
 		WebElement logout_btn=driver.findElement(By.id("nav-item-signout"));
 		//WebDriverWait e_wait=new Webdriverwait(driver,Duration.ofSeconds(10));
-		logout_btn.click();
+		logout_btn.click();*/
 		
 		driver.quit();
 		
